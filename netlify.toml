@@ -1,0 +1,7 @@
+
+# Config file for Netlify deployment
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

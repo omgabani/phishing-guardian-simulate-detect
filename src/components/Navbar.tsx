@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Shield, Menu, X, BookOpen, ExternalLink } from "lucide-react";
+import { Shield, Menu, X, BookOpen } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,9 +36,11 @@ const Navbar = () => {
           <Link to="/quiz" className="hover:text-secondary transition-colors">
             Quiz
           </Link>
-          <Button variant="secondary">
-            <BookOpen className="mr-2 h-4 w-4" /> Resources
-          </Button>
+          <Link to="/resources">
+            <Button variant="secondary">
+              <BookOpen className="mr-2 h-4 w-4" /> Resources
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -86,9 +88,11 @@ const Navbar = () => {
             >
               Quiz
             </Link>
-            <Button variant="secondary" className="w-full">
-              <BookOpen className="mr-2 h-4 w-4" /> Resources
-            </Button>
+            <Link to="/resources" onClick={toggleMenu}>
+              <Button variant="secondary" className="w-full">
+                <BookOpen className="mr-2 h-4 w-4" /> Resources
+              </Button>
+            </Link>
           </div>
         </div>
       )}

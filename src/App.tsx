@@ -10,6 +10,7 @@ import Learn from "./pages/Learn";
 import Simulator from "./pages/Simulator";
 import Tools from "./pages/Tools";
 import Quiz from "./pages/Quiz";
+import Resources from "./pages/Resources";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const App = () => (
         <Route path="/simulator" element={<Simulator />} />
         <Route path="/tools" element={<Tools />} />
         <Route path="/quiz" element={<Quiz />} />
+        <Route path="/resources" element={<Resources />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>

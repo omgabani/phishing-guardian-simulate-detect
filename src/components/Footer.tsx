@@ -1,4 +1,3 @@
-
 import { Shield, Heart, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -14,6 +13,9 @@ const Footer = () => {
             </div>
             <p className="text-sm text-gray-300">
               An educational platform to help users identify and protect themselves from phishing attacks.
+            </p>
+            <p className="text-sm text-gray-300">
+              Developed by: Om Gabani, Vaibhav Gupta, Ayush Maurya
             </p>
           </div>
           

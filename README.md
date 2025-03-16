@@ -1,7 +1,7 @@
 
 ## What technologies are used for this project?
 
-This project is built with .
+This project is built with:
 
 - Vite
 - TypeScript
@@ -9,3 +9,8 @@ This project is built with .
 - shadcn-ui
 - Tailwind CSS
 
+## Developers
+
+- Om Gabani
+- Vaibhav Gupta
+- Ayush Maurya
